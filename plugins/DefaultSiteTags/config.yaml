@@ -1,0 +1,17 @@
+name: Default Site Tags
+id: DefaultSiteTags
+key: DefaultSiteTags
+author_link: http://endevver.com
+author_name: Jay Allen, Endevver Consulting
+description: Surfaces config directives DefaultSiteRoot and DefaultSiteURL as template tags, SiteRoot and SiteURL
+version: 1.0
+# plugin_link: http://endevver.com/projects/
+
+tags:
+    function:
+        SiteURL: >
+            sub { MT->config->DefaultSiteURL }
+        SiteRoot: >
+            sub { MT->config->DefaultSiteRoot }
+        # SiteURL: $DefaultSiteTags::hdlr_site_url
+        # SiteRoot: $DefaultSiteTags::hdlr_site_root
